@@ -35,6 +35,7 @@
                 <li><a href="" class="nav-item">Team</a> </li>
                 <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
             </ul>
+            <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M112 6H12A12.04 12.04 0 0 0 0 18a12.04 12.04 0 0 0 12 12h100a12.04 12.04 0 0 0 12-12 12.04 12.04 0 0 0-12-12zm0 44H12A12.04 12.04 0 0 0 0 62a12.04 12.04 0 0 0 12 12h100a12.04 12.04 0 0 0 12-12 12.04 12.04 0 0 0-12-12zm0 44H12a12.04 12.04 0 0 0-12 12 12.04 12.04 0 0 0 12 12h100a12.04 12.04 0 0 0 12-12 12.04 12.04 0 0 0-12-12z"/></svg></button>
         </div>
         <div class="wrap">
             <h1>Best Software Landingpage</h1>
@@ -47,10 +48,10 @@
     </div>
     <div class="page-company">
         <ul class="list-company">
-            <li class="list-company-item company1"></li>
-            <li class="list-company-item company2"></li>
-            <li class="list-company-item company3"></li>
-            <li class="list-company-item company4"></li>
+            <li class="list-company-item company1"><span></span></li>
+            <li class="list-company-item company2"><span></span></li>
+            <li class="list-company-item company3"><span></span></li>
+            <li class="list-company-item company4"><span></span></li>
         </ul>
     </div>
     <div class="page-grid">
@@ -346,18 +347,28 @@
         </div>
     </div>
     <div class="footer">
-        <div class="wrap">
-            <div class="social-box">
-                <p>Made With Love & Copyright By - <a href="">limpon</a></p>
-                <ul class="social">
-                        <li> <a href="" target="_blank" class="social icon-fb"><span></span></a></li>
-                        <li> <a href="" target="_blank" class="social icon-tw"><span></span></a></li>
-                        <li> <a href="" target="_blank" class="social icon-be"><span></span></a></li>
-                        <li> <a href="" target="_blank" class="social icon-pin"><span></span></a></li>
-                        <li> <a href="" target="_blank" class="social icon-f"><span></span></a></li>
-                    </ul>
-            </div>
+        <div class="wrap social-box">
+            <p>Made With Love & Copyright By - <a href="">limpon</a></p>
+            <ul class="social">
+                <li> <a href="" target="_blank" class="social icon-fb"><span></span></a></li>
+                <li> <a href="" target="_blank" class="social icon-tw"><span></span></a></li>
+                <li> <a href="" target="_blank" class="social icon-be"><span></span></a></li>
+                <li> <a href="" target="_blank" class="social icon-pin"><span></span></a></li>
+                <li> <a href="" target="_blank" class="social icon-f"><span></span></a></li>
+            </ul>
         </div>
+    </div>
+    <div class="modal">
+        <button class="btn-close" type="button"><span>&times;</span></button>
+        <ul class="nav-modal">
+            <li><a href="" class="nav-item">Home</a> </li>
+            <li><a href="" class="nav-item">Features</a> </li>
+            <li><a href="" class="nav-item">Video</a> </li>
+            <li><a href="" class="nav-item">Screens</a> </li>
+            <li><a href="" class="nav-item">Pricing</a> </li>
+            <li><a href="" class="nav-item">Team</a> </li>
+            <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
+        </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
@@ -375,6 +386,12 @@
                     $(".btn-3").hide();
                     $(".social-3").fadeIn();
                 });
+                $(".btn-menu").click(function(){
+                    $(".modal").show()
+                })
+                $(".btn-close").click(function(){
+                    $(".modal").hide()
+                })
             });
     </script>
 </body>
